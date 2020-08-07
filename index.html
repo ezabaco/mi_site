@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Diseño gráfico. Logos, branding e imagen corporativa">
+  <meta name="author" content="ezabaco">
 
-  <title>Creative - Start Bootstrap Theme</title>
+  <title>ezabaco.com - Diseño gráfico</title>
 
   <!-- Font Awesome Icons -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -23,6 +23,9 @@
 
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.min2.css" rel="stylesheet">
+
+  <!-- Cookieconsent - Includes cookieconsent -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
 </head>
 
@@ -247,9 +250,11 @@
   <!-- Footer -->
   <footer class="bg-light py-5">
     <div class="container">
-      <div class="small text-center text-muted">&copy; ezabaco 2020 | Graphic design & customization: ezabaco | Theme design: Start Bootstrap</div>
+      <div class="small text-center text-muted">&copy; ezabaco 2020 | Graphic design & customization: ezabaco.com | Theme design: Start Bootstrap</div>
+      <div class="small text-center text-muted"><p><a href="aviso_legal.html" target="blank">Aviso legal</a> | <a href="cookies.html" target="blank">Politica de cookies</a> </p></div>
     </div>
   </footer>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -261,6 +266,28 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
+
+  <!-- Custom scripts for cookieconsent -->
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+      <script>
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#eb6c44",
+            "text": "#ffffff"
+          },
+          "button": {
+            "background": "#f5d948"
+          }
+        },
+        "position": "top",
+        "content": {
+          "message": "Utilizamos cookies para asegurar que damos la mejor experiencia al usuario en nuestro sitio web. Si continúa utilizando este sitio asumiremos que está de acuerdo.",
+          "dismiss": "Estoy de acuerdo",
+          "link": "Leer más"
+        }
+      });
+</script>
 
 </body>
 
